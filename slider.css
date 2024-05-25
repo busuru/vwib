@@ -1,0 +1,30 @@
+.row-cola {
+  position: relative;
+ /* display: inline-block;*/
+  overflow: hidden;
+}
+
+.link {
+  /*font-size: 24px;*/
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #f9f9f9 !important;
+
+}
+
+.sloder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(232, 54, 48);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+  z-index: 0;
+}
+
+.row-cola:hover .sloder {
+  transform: scaleX(1)!important;}
